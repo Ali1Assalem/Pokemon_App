@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Pokemons</string>
+    <string name="title_home">Pokemon</string>
+    <string name="favorite">Favorite</string>
+    <string name="profile">Profile</string>
+    <string name="splash_screen_title">Fav Pokemon</string>
+    <string name="add">Add</string>
+    <string name="edit">Edit</string>
+    <string name="logout">Logout</string>
+    <string name="no_pokemons_addes_yet">No Pokemons Addes Yet..</string>
+    <string name="register">Register</string>
+    <string name="login">Login</string>
+</resources>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_register_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_16sdp"
+        android:text="SIGN IN"
+        android:textStyle="bold"
+        android:textSize="@dimen/_24sdp"
+        android:gravity="center"
+        android:fontFamily="cursive"
+        android:textColor="@color/primary_light_color"
+        app:layout_constraintEnd_toStartOf="@+id/til_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_email"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:hint="Email"
+        app:hintTextColor="@color/blue_grey_700"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_register_txt">
+
+        <EditText
+            android:id="@+id/edt_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textColor="@color/grey_900"
+            android:textSize="@dimen/_12sdp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_password"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        app:passwordToggleEnabled="true"
+        android:hint="Password"
+        app:passwordToggleTint="@color/primary_light_color"
+        app:hintTextColor="@color/blue_grey_700"
+        app:layout_constraintTop_toBottomOf="@id/til_email">
+
+        <EditText
+            android:id="@+id/edt_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:gravity="top"
+            android:maxLines="5"
+            android:ems="10"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textColor="@color/grey_900"
+            android:textSize="@dimen/_12sdp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <TextView
+        android:id="@+id/txt_signUP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="229dp"
+        android:fontFamily="cursive"
+        android:text="Create account , SIGN UP"
+        android:textSize="@dimen/_16sdp"
+        android:textStyle="normal"
+        android:padding="@dimen/_16sdp"
+        android:gravity="center"
+        android:textColor="@color/primary_dark_color"
+        android:layout_margin="@dimen/_16sdp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:layout_marginBottom="@dimen/_25sdp"
+        android:padding="@dimen/_10sdp"
+        android:text="SIGN IN"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
